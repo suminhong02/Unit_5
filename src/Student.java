@@ -10,15 +10,17 @@ import java.util.Scanner;
 public class Student
 {
     //declare instance data
-    private String studnentname;
     private int score1;
     private int score2;
+    private String name;
+    Scanner scan = new Scanner(System.in);
     //-----------------------------------------------
     //constructor
     //-----------------------------------------------
     public Student(String studentName)
     {
         //add body of constructor
+        name = studentName;
         score1 = 0;
         score2 = 0;
     }
@@ -30,10 +32,9 @@ public class Student
     public void inputGrades()
     {
         //add body of inputGrades
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Enter "+ studnentname + "'s score for test1");
+        System.out.print("Enter "+ name + "'s score for test1: ");
         score1 = scan.nextInt();
-        System.out.print("Enter "+ studnentname + "'s score for test2");
+        System.out.print("Enter "+ name + "'s score for test2: ");
         score2 = scan.nextInt();
     }
 
@@ -56,13 +57,13 @@ public class Student
     public String getName()
     {
         //add body of printName
-        return studnentname;
+        return name;
     }
 
     // toString method:  Output in the following format
     // Name: Joe  Test1: 85  Test2: 91
     public String toString(){
-        return "Name:"+ studnentname + "Test1:" + score1 + "Test2:" + score2;
+        return "Name: "+ name + " Test1: " + score1 + " Test2: " + score2;
     }
 
 
