@@ -13,7 +13,7 @@ public class Grades
         Student student2 = new Student("Mike");
 
         student1.inputGrades();
-        student1.printName();
+        student1.getName();
         student1.getAverage();
         student1.toString();
         //input grades for Mary
@@ -22,7 +22,7 @@ public class Grades
 
         System.out.println();
         student2.inputGrades();
-        student2.printName();
+        student2.getName();
         student2.getAverage();
         student2.toString();
         //input grades for Mike

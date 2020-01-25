@@ -53,7 +53,7 @@ public class Student
     //-----------------------------------------------
 
     //add header for printName
-    public String printName()
+    public String getName()
     {
         //add body of printName
         return studnentname;
