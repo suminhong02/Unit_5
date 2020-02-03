@@ -33,9 +33,24 @@ public class Truck {
         mpg = m;
     }
     public boolean enoughFuel(double miles){
-        if(miles<(mpg*fuel)){
-
+        if(miles<=(mpg*fuel)){
+            return true;
         }
+        else return false;
+    }
+    public String drive(double miles){
+        if(enoughFuel(miles)){
+            odometer += miles;
+            fuel -= (miles/mpg);
+            return "Success";
+        }
+        else return truckID+" does not have enough fuel to drive "+miles+ " miles.";
+    }
+    public void fill(){
+        CAPACITY - fuel;
+    }
+    public String fill(double gallon){
+        if()
     }
 
 }
