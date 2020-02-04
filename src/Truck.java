@@ -1,5 +1,5 @@
 /**
- * This class models an Item in a hardware store
+ * This class models a Truck in TruckTest
  * @author Sumin Hong
  * @since February 4, 2020
  */
