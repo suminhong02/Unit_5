@@ -1,3 +1,8 @@
+/**
+ * This class models an Item in a hardware store
+ * @author Sumin Hong
+ * @since February 4, 2020
+ */
 public class Truck {
 
     private String truckID;
@@ -44,13 +49,31 @@ public class Truck {
             fuel -= (miles/mpg);
             return "Success";
         }
-        else return truckID+" does not have enough fuel to drive "+miles+ " miles.";
+        else return "Truck "+truckID+" does not have enough fuel to drive "+miles+ " miles.";
     }
     public void fill(){
-        CAPACITY - fuel;
+        double neededfuel = CAPACITY - fuel;
+        fuel +=neededfuel;
+        totalFuel+=neededfuel;
     }
+
     public String fill(double gallon){
-        if()
+        if(gallon>CAPACITY-fuel){
+            return "Truck " + truckID+": Gallons exceeds tank capacity";
+        }
+        else{
+            return "Success";
+        }
+    }
+    public static double getTotalFuel(){
+
+        return totalFuel;
+    }
+    public String toString(){
+        return "Truck: "+truckID+"\n"+
+                "Odometer: "+odometer+"\n"+
+                "Miles Per Gallon: "+mpg+"\n"+
+                "Fuel: "+fuel;
     }
 
 }
