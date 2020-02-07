@@ -37,4 +37,13 @@ public class Account {
     public double getBalance(){
         return balance;
     }
+
+    public void deposit(double amount){
+        balance += amount;
+    }
+    public boolean withdrawal(double amount){
+        if(balance-amount>=0){
+
+        }
+    }
 }
