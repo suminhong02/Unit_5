@@ -43,7 +43,15 @@ public class Account {
     }
     public boolean withdrawal(double amount){
         if(balance-amount>=0){
-
+                balance-=amount;
+                return true;
         }
+        else return false;
+    }
+
+    public  String toString(){
+        return "Customer Name: "+first+" "+last+"\n"+
+                "Account #: "+acctNum+"\n"+
+                "Current Balance: $"+balance;
     }
 }
