@@ -79,7 +79,6 @@ public class FractionTest {
         Fraction result = Fraction.multiply(f1, f2);
         assertEquals("-15/32", result.toString());
     }
-
     @Test
     public void multiplyTwoNegatives() {
         Fraction f1 = new Fraction(-5, 8);
